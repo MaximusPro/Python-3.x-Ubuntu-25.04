@@ -16,6 +16,7 @@ sudo ./configure --prefix=${CUSTOM_PYTHON_DIR} --enable-optimizations --with-ens
 
 make -j$(nproc)
 sudo make altinstall
+cd ..
 sudo rm Python-3.7.16.tgz
 sudo rm -rf Python-3.7.16
 echo "Path to Python: ${CUSTOM_PYTHON_DIR}"
